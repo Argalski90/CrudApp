@@ -1,24 +1,26 @@
-package com.argalski.Entity;
+package com.argalski.entity;
 
 public class User {
 
-    private int id;
+    private long id;
+
     private String name;
+
     private String course;
 
-    public User(int id, String name, String course) {
+    public User() { }
+
+    public User(long id, String name, String course) {
         this.id = id;
         this.name = name;
         this.course = course;
     }
 
-    public User() { }
-
-    public int getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 
